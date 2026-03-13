@@ -588,51 +588,95 @@ color:transparent;
 /* =========================
    GALLERY
 ========================= */
+/* =========================
+   GALLERY
+========================= */
 
-.gallery {
-  padding: 100px 10%;
-   background: rgba(38, 49, 69, 0.35);
-  text-align: center;
+.gallery{
+  padding:100px 10%;
+  background:rgba(38,49,69,0.35);
+  text-align:center;
 }
 
-.gallery .section-title {
-  font-size: 70px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 60px;
-  background: linear-gradient(45deg, #f472b6, #fb7185);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* ensures gradient shows in all browsers */
-  color: transparent;
+/* title */
+
+.gallery .section-title{
+  font-size:70px;
+  font-weight:600;
+  letter-spacing:2px;
+  margin-bottom:60px;
+  background:linear-gradient(45deg,#f472b6,#fb7185);
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-.gallery-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+/* grid images */
+
+.gallery-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.4s;
 }
 
-.gallery-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+.gallery-img:hover{
+  transform:scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
 
-/* Bootstrap modal image styling */
-.modal-content img {
-  width: 100%;
-  max-height: 80vh;
-  object-fit: contain; /* keeps aspect ratio, no stretching */
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+.gallery-close{
+  position:absolute;
+  top:10px;
+  right:15px;
+  font-size:32px;
+  color:white;
+  background:rgba(0,0,0,0.6);
+  border:none;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  transition:0.3s;
 }
 
+.gallery-close:hover{
+  background:#ff4d6d;
+  transform:scale(1.1);
+}
 
+/* modal */
 
-/* BOOKING FORM */
+.modal-content{
+  background:#000;
+  border-radius:15px;
+}
+
+/* modal images */
+
+.modal-img{
+  width:100%;
+  height:75vh;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+/* close button */
+
+.close-btn{
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:#fff;
+  border-radius:50%;
+  padding:10px;
+  z-index:1000;
+}
 
 /* BOOKING SECTION */
 
@@ -800,4 +844,119 @@ pointer-events:none;
 
 .back-to-top:hover{
 transform:scale(1.1);
+}
+
+
+/* ===================================
+   COMMON MOBILE RESPONSIVE FIX
+=================================== */
+
+@media (max-width: 768px){
+
+/* section spacing */
+section{
+padding:70px 20px !important;
+}
+
+/* titles */
+.section-title{
+font-size:36px !important;
+margin-bottom:40px;
+}
+
+/* hero section */
+.hero{
+height:auto;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+/* carousel image */
+.slide-img{
+height:70vh;
+}
+
+/* navbar */
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+padding:15px 20px;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+margin-top:10px;
+}
+
+/* about layout */
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-image{
+width:100%;
+max-width:400px;
+margin:auto;
+}
+
+/* events grid */
+.event-container{
+grid-template-columns:1fr !important;
+}
+
+/* services grid */
+.service-container{
+grid-template-columns:1fr !important;
+}
+
+/* gallery images */
+.gallery-img{
+height:180px;
+}
+
+/* modal image */
+.modal-img{
+height:50vh;
+}
+
+/* contact cards */
+.contact-container{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-card{
+width:100%;
+max-width:320px;
+}
+
+/* buttons */
+.book-btn{
+padding:12px 28px;
+font-size:16px;
+}
+
+}
+
+/* tablet responsive */
+
+@media (max-width: 992px){
+
+.event-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.service-container{
+grid-template-columns:repeat(2,1fr);
+}
+
 }
