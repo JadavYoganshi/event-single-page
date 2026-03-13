@@ -1,13 +1,505 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>EventSinglePage</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eventify - Event Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
+
 <body>
-  <app-root></app-root>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">Eventify</div>
+
+<nav>
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<!-- HERO / CAROUSEL -->
+
+<section class="hero" id="home">
+
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<!-- SLIDE 1 -->
+<div class="carousel-item active">
+
+<img src="assets/event_image.jpeg" class="d-block w-100 slide-img">
+
+<div class="hero-content">
+
+<h1>Make Your Events Memorable</h1>
+
+<p>
+We create unforgettable weddings, corporate events,
+concerts and celebrations with creativity and passion.
+</p>
+
+<a href="#events" class="btn">Explore Events</a>
+
+</div>
+
+</div>
+
+<!-- SLIDE 2 -->
+<div class="carousel-item">
+
+<img src="assets/event_image_1.webp" class="d-block w-100 slide-img">
+
+<div class="hero-content">
+
+<h1>Beautiful Wedding Planning</h1>
+
+<p>
+Professional decoration and unforgettable wedding
+experiences for your special day.
+</p>
+
+<a href="#events" class="btn">Explore Events</a>
+
+</div>
+
+</div>
+
+<!-- SLIDE 3 -->
+<div class="carousel-item">
+
+<img src="assets/c1.jpg" class="d-block w-100 slide-img">
+
+<div class="hero-content">
+
+<h1>Corporate Event Management</h1>
+
+<p>
+Successful meetings, conferences and business
+events managed perfectly.
+</p>
+
+<a href="#events" class="btn">Explore Events</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ARROWS -->
+
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="section-title">About Eventify</h2>
+
+<div class="about-container">
+
+<div class="about-content">
+
+<h3>Creating Unforgettable Experiences</h3>
+
+<p>
+Eventify is a professional event management company
+dedicated to turning your ideas into unforgettable
+experiences. With years of experience in the event
+industry, we specialize in planning weddings,
+corporate events, concerts, birthday parties,
+and large public festivals.
+</p>
+
+<p>
+Our expert team handles everything from creative
+design and venue decoration to guest management
+and entertainment. We believe every event should
+be unique, memorable, and perfectly organized.
+</p>
+
+<p>
+Whether you are planning a grand celebration or
+a professional corporate gathering, Eventify ensures
+that every detail is managed with creativity,
+precision, and passion.
+</p>
+
+<div class="about-features">
+
+<div class="feature">
+<i class="fa-solid fa-star"></i>
+<span>10+ Years Experience</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-calendar-check"></i>
+<span>500+ Events Organized</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-users"></i>
+<span>1000+ Happy Clients</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="about-image">
+
+<div class="glow-border">
+<img src="assets/event.jpg" alt="Event Management">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Events -->
+ <section class="events" id="events">
+
+<h2 class="section-title">Events</h2>
+
+<div class="event-container">
+
+<!-- Music Festival -->
+<div class="event-card">
+<i class="fa-solid fa-music"></i>
+<h3>Music Festival</h3>
+<p>Enjoy live music with amazing lights and unforgettable stage performances.</p>
+</div>
+
+<!-- Wedding Event -->
+<div class="event-card">
+<i class="fa-solid fa-ring"></i>
+<h3>Wedding Event</h3>
+<p>Beautiful wedding planning with decoration, catering and perfect arrangements.</p>
+</div>
+
+<!-- Corporate Event -->
+<div class="event-card">
+<i class="fa-solid fa-briefcase"></i>
+<h3>Corporate Event</h3>
+<p>Professional meetings, conferences and business events organized perfectly.</p>
+</div>
+
+<!-- Birthday Party -->
+<div class="event-card">
+<i class="fa-solid fa-cake-candles"></i>
+<h3>Birthday Party</h3>
+<p>Celebrate your special day with creative decorations and fun entertainment.</p>
+</div>
+
+<!-- Fashion Show -->
+<div class="event-card">
+<i class="fa-solid fa-shirt"></i>
+<h3>Fashion Show</h3>
+<p>Stylish fashion shows with professional stage lighting and runway setup.</p>
+</div>
+
+<!-- Conference -->
+<div class="event-card">
+<i class="fa-solid fa-users"></i>
+<h3>Conference</h3>
+<p>Large conferences with modern technology, seating arrangements and management.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="service-container">
+
+<!-- Event Planning -->
+<div class="service-card">
+<i class="fa-solid fa-calendar-check"></i>
+<h3>Event Planning</h3>
+<p>Professional planning and management for weddings, corporate events, and festivals.</p>
+</div>
+
+<!-- Stage & Lighting -->
+<div class="service-card">
+<i class="fa-solid fa-lightbulb"></i>
+<h3>Stage & Lighting</h3>
+<p>Modern stage design with creative lighting for concerts, fashion shows and parties.</p>
+</div>
+
+<!-- Decoration -->
+<div class="service-card">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<h3>Decoration</h3>
+<p>Beautiful decorations for weddings, birthdays and special celebrations.</p>
+</div>
+
+<!-- Catering -->
+<div class="service-card">
+<i class="fa-solid fa-utensils"></i>
+<h3>Catering Service</h3>
+<p>Delicious food menus and catering arrangements for every type of event.</p>
+</div>
+
+<!-- Sound System -->
+<div class="service-card">
+<i class="fa-solid fa-volume-high"></i>
+<h3>Sound System</h3>
+<p>High quality sound systems for music festivals, conferences and parties.</p>
+</div>
+
+<!-- Event Management -->
+<div class="service-card">
+<i class="fa-solid fa-users-gear"></i>
+<h3>Event Management</h3>
+<p>Complete event coordination including staff, setup and guest management.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Event Gallery</h2>
+
+  <div class="row g-3">
+    <!-- All images -->
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/wedding_1.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/wedding_2.jpeg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/wedding_3.webp" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/wedding_4.webp" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3">
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/corporate_1.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="4">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/corporate_2.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="5">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/corporate_3.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="6">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/corporate_4.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="7">
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/music_1.webp" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="8">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/music_2.avif" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="9">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/music_3.jpg" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="10">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="assets/music_4.avif" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="11">
+    </div>
+  </div>
+
+  <!-- Single Modal with Carousel -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+          <!-- Carousel -->
+          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/wedding_1.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/wedding_2.jpeg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/wedding_3.webp" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/wedding_4.webp" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/corporate_1.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/corporate_2.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/corporate_3.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/corporate_4.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/music_1.webp" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/music_2.avif" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/music_3.jpg" class="d-block w-100 rounded">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/music_4.avif" class="d-block w-100 rounded">
+              </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BOOKING FORM -->
+
+<section class="booking" id="booking">
+
+<h2 class="section-title">Plan With Us</h2>
+
+<p class="booking-text">
+Plan your perfect event with Eventify.  
+Click the button below and fill out the booking form.  
+Our team will contact you shortly.
+</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfRc4wbnxQ6PcFzcHLEda3BTd1paacqNGETbssyThTVz-wK9A/viewform?usp=header" target="_blank" class="book-btn">
+Plan With Us
+</a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p class="contact-text">
+Let’s bring your event ideas to life!  
+Contact us today and our team will help you plan a memorable and perfectly organized event.
+</p>
+
+<div class="contact-container">
+
+<div class="contact-card">
+<i class="fa-solid fa-phone"></i>
+<h3>Call Us</h3>
+<a href="tel:+917041781100">+91 7041781100</a>
+</div>
+
+<div class="contact-card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email Us</h3>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=jadavyoganshi@gmail.com" target="_blank">
+jadavyoganshi@gmail.com
+</a>
+</div>
+
+<div class="contact-card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Location</h3>
+<p>Ahmedabad, India</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Eventify | All Rights Reserved</p>
+
+</footer>
+
+<a href="#home" class="back-to-top">
+<i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<script>
+window.addEventListener("scroll", function(){
+let btn = document.querySelector(".back-to-top");
+if(window.scrollY > 300){
+btn.style.opacity = "1";
+btn.style.pointerEvents = "auto";
+}else{
+btn.style.opacity = "0";
+btn.style.pointerEvents = "none";
+}
+});
+</script>
+
 </body>
 </html>
